@@ -1,0 +1,48 @@
+ion-content {
+  --background: url('/assets/fondo_rosa.jpg') no-repeat center center / cover;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  width: 60%;
+  margin-left: 20%;
+  flex-direction: row;
+}
+
+.left, .right {
+  width: 48%;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100%;
+  --background: #9959ab;
+  --color: #ffffff;
+}
+
+ion-list {
+  background: #9959ab;
+  border-radius: 16px;
+  padding: 10px;
+  color: white;
+}
+
+ion-item {
+  --background: transparent;
+}
+p.sc-ion-label-md {
+  color: white;
+}
+
+h2{
+  color: #9959ab;
+  text-align: center;
+  font-weight: bold;
+}

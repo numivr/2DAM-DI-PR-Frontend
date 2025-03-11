@@ -1,0 +1,20 @@
+<ion-content>
+  <div class="container">
+    <div class="left">
+      <h2>Ingresa tu nombre</h2>
+      <ion-input [(ngModel)]="userName" placeholder="Tu nombre" class="input"></ion-input>
+      <ion-button expand="block" class="btn" (click)="startQuiz()">Comenzar →</ion-button>
+    </div>
+
+    <div class="right">
+      <h2>Ranking</h2>
+      <ion-list>
+        <ion-item *ngFor="let jugador of top5Jugadores">
+          <ion-label>
+            <p><strong>{{ jugador.nombre }}</strong> - {{ jugador.puntos }} pts</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

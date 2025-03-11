@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="quiz-container">
+    <div class="pregunta">
+      <h2>{{ pregunta }}</h2>
+    </div>
+
+    <div class="respuestas">
+      <ion-button *ngFor="let respuesta of respuestas" (click)="seleccionarRespuesta(respuesta)">
+        {{ respuesta }}
+      </ion-button>
+
+    </div>
+
+    <div class="timer-container">
+      <p class="timer">Tiempo: {{ timer }}s</p>
+    </div>
+
+    <div class="puntos-container">
+      <p>Puntos: {{ puntos }}</p>
+    </div>
+  </div>
+</ion-content>

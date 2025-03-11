@@ -1,0 +1,48 @@
+ion-content {
+  --background: url('/assets/fondo_rosa.jpg') no-repeat center center / cover;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 8%;}
+
+  .pregunta {
+    color: #5e085d;
+    background: #c97fde;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 850px;
+    box-shadow: 0 4px 6px rgb(153, 89, 171);
+  }
+
+
+  .respuestas ion-button {
+    --background: #eebeee;
+    --color: #a2419a;
+    border-radius: 8px;
+  }
+
+
+  .respuestas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 850px;
+    height:  500px;
+  }
+
+  .timer-container {
+    margin-top: 20px;
+    background: #c97fde;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgb(136, 64, 155);
+  }
+
